@@ -17,10 +17,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/index.ts"
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "start:prod": "pm2 start dist/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "pm2": "^5.1.1",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.2"
   }
